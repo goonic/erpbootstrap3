@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>订单详情_订单管理_后台管理系统</title>
+<link rel="stylesheet" href="app/css/bootstrap.min.css" />
+<link rel="stylesheet" href="app/css/matrix-style.css" />
+<link rel="stylesheet" href="app/css/matrix-media.css" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="favicon.ico" type="image/gif" />
+    <!--[if lt IE 9]>
+      <script src="app/js/jshtml5shiv.min.js"></script>
+      <script src="app/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+  <h1><a href="#">后台管理系统</a></h1>
+</div>
+<!--close-Header-part--> 
+
+<!--top-Header-menu-->
+<div id="user-nav">
+  <ul class="nav">
+    
+    <li class=""><a title="" href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"> </span><span class="text">后台首页</span></a></li>
+    <li class=""><a title="" href="#"><span class="glyphicon glyphicon-lock" aria-hidden="true"> </span><span class="text">修改密码</span></a></li>
+    <li class=""><a title="" href="login.html"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"> </span><span class="text">退出登录</span></a></li>
+  </ul>
+  
+</div>
+<!--sidebar-menu-->
+<div id="sidebar"> <a class="hidden" href="#"><span class="glyphicon glyphicon-list"> </span>系统菜单</a>
+	<ul>
+		<li class="submenu"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"> </span><span>后台首页</span></a></li>
+		<li class="submenu"><a href="#"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"> </span><span>销售管理</span></a>
+			<ul>
+				<li><a href="order_create.html">创建订单</a></li>
+				<li><a href="order_details.html">订单管理</a></li>
+			</ul>
+		</li>
+		<li class="submenu"><a href="#"><span class="glyphicon glyphicon-file" aria-hidden="true"> </span><span>数据导入</span></a>
+			<ul>
+				<li><a href="import_brush.html">刷单登记</a></li>
+				<li><a href="import_check.html">数据验证</a></li>
+			</ul>
+		</li>
+		<li class="submenu"><a href="loading.html"><span class="glyphicon glyphicon-random" aria-hidden="true"> </span><span>加载页面</span></a></li>
+		<li class="submenu"><a href="#"><span class="glyphicon glyphicon-stats" aria-hidden="true"> </span><span>Error</span></a>
+			<ul>
+				<li><a href="error_forbidden.html">404</a></li>
+			</ul>
+		</li>
+		<li class="submenu"><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"> </span><span>系统管理</span></a>
+			<ul>
+				<li><a href="role_modify.html">角色管理</a></li>
+			</ul>
+		</li>
+		<li class="submenu"><a href="buttons_alert.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> </span><span>按钮及警告框</span></a></li>
+		<li class="submenu"><a href="modal_form.html"><span class="glyphicon glyphicon-book" aria-hidden="true"> </span><span>模拟框表单</span></a>	</li>
+		<li class="submenu"><a href="bootbox_modal.html"><span class="glyphicon glyphicon-retweet" aria-hidden="true"> </span><span>提示框</span></a></li>
+		<li class="submenu"><a href="#"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"> </span><span>配置管理</span></a>	</li>
+		
+	</ul>
+</div>
+<!--end-sidebar-menu-->
+<!--containt-part-->
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><span class="glyphicon glyphicon-home" aria-hidden="true"> </span> 首页</a> <a href="#" class="current">销售管理</a> <a href="#" class="current">订单管理</a> </div>
+    <h1>订单管理</h1>
+  </div>
+  <!--alert-part-->
+  <div class="widget-content alert_padding">
+  			<div class="alert alert-warning alert-dismissible" role="alert">
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  <strong>操作错误!</strong> 
+			</div>
+  </div>
+  <!--end-alert-part-->
+  
+  <div class="container-fluid">
+  	<div class="row">
+		<div class="col-xs-6">
+		 <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <span class="glyphicon glyphicon-th"> </span></span>
+            <h5>订单信息</h5>
+          </div>
+          <div class="widget-content">
+            <table class="table table-hover order-table">
+              <tbody>
+                <tr>
+                  <td>订单 I D：</td>
+                  <td>62562</td>
+                </tr>
+				<tr>
+                  <td>订单编号：</td>
+                  <td>J9135057659 </td>
+                </tr>
+				<tr>
+                  <td>原始单号：</td>
+                  <td><span class="red">9135057659</span>  <a href="#"><span class="badge badge-success">详情</span></a> </td>
+                </tr>
+				<tr>
+                  <td>客户信息：</td>
+                  <td><span class="red">jd_5767fbe470f0c</span>  <a href="#"><span class="badge badge-success">客户信息</span></a> </td>
+                </tr>
+				<tr>
+                  <td>订单 I D：</td>
+                  <td>62562</td>
+                </tr>
+				<tr>
+                  <td>订单编号：</td>
+                  <td>J9135057659 </td>
+                </tr>
+				<tr>
+                  <td>订单 I D：</td>
+                  <td>62562</td>
+                </tr>
+				<tr>
+                  <td>订单编号：</td>
+                  <td>J9135057659 </td>
+                </tr>
+				<tr>
+                  <td>订单 I D：</td>
+                  <td>62562</td>
+                </tr>
+				<tr>
+                  <td>订单编号：</td>
+                  <td>J9135057659 </td>
+                </tr>
+				<tr>
+                  <td>订单 I D：</td>
+                  <td>62562</td>
+                </tr>
+				<tr>
+                  <td>订单编号：</td>
+                  <td>J9135057659 </td>
+                </tr>
+				<tr>
+                  <td>订单 I D：</td>
+                  <td>62562</td>
+                </tr>
+				<tr>
+                  <td>订单编号：</td>
+                  <td>J9135057659 </td>
+                </tr>
+				<tr>
+                  <td>订单 I D：</td>
+                  <td>62562</td>
+                </tr>
+				<tr>
+                  <td>订单编号：</td>
+                  <td>J9135057659 </td>
+                </tr>
+							
+                 
+              </tbody>
+            </table>
+          </div>
+        </div>
+		 <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <span class="glyphicon glyphicon-th"> </span></span>
+            <h5>订单备注</h5>
+          </div>
+          <div class="widget-content nopadding">
+		  <form id="" name="">	  
+            <table class="table table-hover order-table-form">
+              <tbody>
+                <tr>
+                  <td><span class="red">*</span>买家备注：</td>
+                  <td><input type="text" class="form-control" id="" placeholder="" value="">
+					</td>
+                </tr>
+				<tr>
+				  <td></td>
+                  <td><small>买家备注无法修改。</small></td>
+                </tr>
+				<tr>
+                  <td><span class="red">*</span>卖家备注：</td>
+				  <td><input type="text" class="form-control" id="" placeholder="" value=""></td>
+                </tr>
+				<tr>
+				  <td></td>
+                  <td><small>更新后自动同步到第三方平台。</small></td>
+                </tr>
+				
+				<tr>
+				  <td></td>
+                  <td><button type="button" class="btn btn-default btn-success">更改备注</button></td>
+                </tr>
+				
+              </tbody>
+            </table>
+			</form>
+          </div>
+        </div>
+		 <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <span class="glyphicon glyphicon-th"> </span></span>
+            <h5>快速发货</h5>
+          </div>
+          <div class="widget-content nopadding">
+		  <form id="" name="">	  
+            <table class="table table-hover order-table-form">
+              <tbody>
+                <tr>
+                  <td><span class="red">*</span>物流公司：</td>
+                  <td><select class="form-control">
+					  <option selected>--请选择--</option>
+					  <option>圆通快递</option>
+					  <option>百世汇通</option>
+					  <option>快捷快递</option>
+					</select>
+					</td>
+                </tr>
+				<tr>
+				  <td></td>
+                  <td><small>[京东订单]货到付款请选择京东快递</small></td>
+                </tr>
+				<tr>
+                  <td><span class="red">*</span>运单编号：</td>
+				  <td><input type="text" class="form-control" id="" placeholder="" value=""></td>
+                </tr>
+				<tr>
+				  <td></td>
+                  <td><small>使用第三方仓库发货无需填写</small></td>
+                </tr>
+				
+				<tr>
+				  <td></td>
+                  <td><button type="button" class="btn btn-default btn-success">取消发货</button></td>
+                </tr>
+				
+              </tbody>
+            </table>
+			</form>
+          </div>
+        </div>
+		 
+		</div>
+		
+		<div class="col-xs-6">
+		  
+		  <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <span class="glyphicon glyphicon-th"> </span></span>
+            <h5>订单商品</h5>
+          </div>
+          <div class="widget-content nopadding">
+		  <form id="" name="">	  
+            <table class="table table-hover order-table">
+			  <thead>		  
+                <tr>
+					<th class="hidden-phone">编号</th>
+					<th>编码</th>
+					<th class="hidden-phone">条码</th>
+					<th class="hidden-phone">优惠</th>
+					<th>单价</th>
+					<th class="hidden-phone">库存</th>
+					<th>数量</th>
+					<th>金额</th>
+					<th>管理</th>				 	 	 	 	 	 	 	 	
+				</tr>
+			  </thead>
+              <tbody>
+				<tr>
+					<td class="hidden-phone">161</td>
+					<td><span class="green">LA0824</span></td>
+					<td class="hidden-phone"><span class="green">6945554252311</span></td>
+					<td class="hidden-phone">0.00</td>
+					<td>27.50</td>
+					<td class="hidden-phone">178</td>
+					<td>2</td>
+					<td>55.00</td>
+					<td><a href="#"><span class="badge badge-success">变更</span></a></td>				 	 	 	 	 	 
+				</tr>
+				<tr>
+					<td class="hidden-phone">161</td>
+					<td><span class="green">LA0824</span></td>
+					<td class="hidden-phone"><span class="green">6945554252311</span></td>
+					<td class="hidden-phone">0.00</td>
+					<td>27.50</td>
+					<td class="hidden-phone">178</td>
+					<td>2</td>
+					<td>55.00</td>
+					<td><a href="#"><span class="badge badge-success">变更</span></a></td>				 	 	 	 	 	 
+				</tr>
+				<tr>
+					<td class="hidden-phone">161</td>
+					<td><span class="green">LA0824</span></td>
+					<td class="hidden-phone"><span class="green">6945554252311</span></td>
+					<td class="hidden-phone">0.00</td>
+					<td>27.50</td>
+					<td class="hidden-phone">178</td>
+					<td>2</td>
+					<td>55.00</td>
+					<td><a href="#"><span class="badge badge-success">变更</span></a></td>				 	 	 	 	 	 
+				</tr>
+				<tr>
+					<td class="hidden-phone">161</td>
+					<td><span class="green">LA0824</span></td>
+					<td class="hidden-phone"><span class="green">6945554252311</span></td>
+					<td class="hidden-phone">0.00</td>
+					<td>27.50</td>
+					<td class="hidden-phone">178</td>
+					<td>2</td>
+					<td>55.00</td>
+					<td><a href="#"><span class="badge badge-success">变更</span></a></td>				 	 	 	 	 	 
+				</tr>
+					 	 	 
+              </tbody>
+            </table>
+			</form>
+          </div>
+        </div>
+		  <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <span class="glyphicon glyphicon-th"> </span></span>
+            <h5>操作日志</h5>
+			<span class="icon-add-btn"><button type="button" class="btn btn-success btn-xs">浏览更多</button></span>
+          </div>
+          <div class="widget-content nopadding">
+		  <form id="" name="">	  
+            <table class="table table-hover order-table">
+			  <thead>		  
+                <tr>
+					<th>编号</th>
+					<th>用户</th>
+					<th>状态</th>
+					<th>日志</th>
+					<th>时间</th>	 	 	 					 	 	 	 	 	 	 	 	
+				</tr>
+			  </thead>
+              <tbody>
+				<tr>
+					<td>18530</td>
+					<td>1号店@发网</td>
+					<td>已付款</td>
+					<td>订单状态变更[已发货]</td>
+					<td>04-24 10:34</td>	 	 	 			 	 	 	 	 	 
+				</tr>
+				<tr>
+					<td>18530</td>
+					<td>1号店@发网</td>
+					<td>已付款</td>
+					<td>订单状态变更[已发货]</td>
+					<td>04-24 10:34</td>	 	 	 			 	 	 	 	 	 
+				</tr>
+				<tr>
+					<td>18530</td>
+					<td>1号店@发网</td>
+					<td>已付款</td>
+					<td>订单状态变更[已发货]</td>
+					<td>04-24 10:34</td>	 	 	 			 	 	 	 	 	 
+				</tr>
+				<tr>
+					<td>18530</td>
+					<td>1号店@发网</td>
+					<td>已付款</td>
+					<td>订单状态变更[已发货]</td>
+					<td>04-24 10:34</td>	 	 	 			 	 	 	 	 	 
+				</tr>	 	 	 
+              </tbody>
+            </table>
+			</form>
+          </div>
+        </div>
+		  <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <span class="glyphicon glyphicon-th"> </span></span>
+            <h5>配送地址</h5>
+          </div>
+          <div class="widget-content nopadding">
+		  <form id="" name="">	  
+            <table class="table table-hover order-table-form">
+              <tbody>
+                <tr>
+                  <td><span class="red">*</span>收货人：</td>
+                  <td><input type="text" class="form-control" id="" placeholder="" value="卢洁"></td>
+                </tr>
+				<tr>
+                  <td><span class="red">*</span>手 机：</td>
+				  <td><input type="text" class="form-control" id="" placeholder="" value="15050690467"></td>
+                </tr>
+				<tr>
+                  <td><span class="red">*</span>收货人：</td>
+                  <td><input type="text" class="form-control" id="" placeholder="" value="卢洁"></td>
+                </tr>
+				<tr>
+                  <td><span class="red">*</span>手 机：</td>
+				  <td><input type="text" class="form-control" id="" placeholder="" value="15050690467"></td>
+                </tr>
+				<tr>
+                  <td><span class="red">*</span>收货人：</td>
+                  <td><input type="text" class="form-control" id="" placeholder="" value="卢洁"></td>
+                </tr>
+				<tr>
+                  <td><span class="red">*</span>地 址：</td>
+				  <td><input type="text" class="form-control" id="" placeholder="" value="梅村街道香梅花园106_302室"></td>
+                </tr>
+				
+				
+				<tr>
+				  <td></td>
+                  <td><small>发货后修改，地址仅保存到系统。</small></td>
+                </tr>
+				<tr>
+				  <td></td>
+                  <td><button type="button" class="btn btn-default btn-success"> 保存操作</button></td>
+                </tr>
+				
+              </tbody>
+            </table>
+			</form>
+          </div>
+        </div>
+		  <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <span class="glyphicon glyphicon-th"> </span></span>
+            <h5>物流信息</h5>
+          </div>
+          <div class="widget-content nopadding">
+		  <form id="" name="">	  
+            <table class="table table-hover order-table-form">
+              <tbody>
+                <tr>
+                  <td><span class="red">*</span>物流公司：</td>
+                  <td><select class="form-control">
+					  <option selected>--请选择--</option>
+					  <option>圆通快递</option>
+					  <option>百世汇通</option>
+					  <option>快捷快递</option>
+					</select>
+					</td>
+                </tr>
+				<tr>
+				  <td></td>
+                  <td><small>[京东订单]货到付款请选择京东快递</small></td>
+                </tr>
+				<tr>
+                  <td><span class="red">*</span>运单编号：</td>
+				  <td><input type="text" class="form-control" id="" placeholder="" value="801694297279"></td>
+                </tr>
+				<tr>
+				  <td></td>
+                  <td><small>使用第三方仓库发货无需填写</small></td>
+                </tr>
+				
+				<tr>
+				  <td></td>
+                  <td><button type="button" class="btn btn-default btn-success">更新物流</button></td>
+                </tr>
+				
+              </tbody>
+            </table>
+			</form>
+          </div>
+        </div>
+		  
+		</div>
+	</div>
+
+  </div>
+</div>
+<!--end-containt-part-->
+
+
+<!--Footer-part-->
+<div class="row-fluid">
+  <div id="footer" class="span12"> Copyright &copy; 2015 Shanghai Top Beauty Industrial Co.,Ltd</div>
+</div>
+<!--end-Footer-part-->
+<script src="app/js/jquery.min.js"></script>
+<script src="app/js/bootstrap.min.js"></script>
+<script src="app/js/matrix.js"></script>
+
+
+</body>
+</html>

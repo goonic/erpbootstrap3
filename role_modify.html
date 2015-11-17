@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>角色管理_系统设置_后台管理系统</title>
+<link rel="stylesheet" href="app/css/bootstrap.min.css" />
+<link rel="stylesheet" href="app/css/matrix-style.css" />
+<link rel="stylesheet" href="app/css/matrix-media.css" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="favicon.ico" type="image/gif" />
+    <!--[if lt IE 9]>
+      <script src="app/js/jshtml5shiv.min.js"></script>
+      <script src="app/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+  <h1><a href="#">后台管理系统</a></h1>
+</div>
+<!--close-Header-part--> 
+
+<!--top-Header-menu-->
+<div id="user-nav">
+  <ul class="nav">
+    
+    <li class=""><a title="" href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"> </span><span class="text">后台首页</span></a></li>
+    <li class=""><a title="" href="#"><span class="glyphicon glyphicon-lock" aria-hidden="true"> </span><span class="text">修改密码</span></a></li>
+    <li class=""><a title="" href="login.html"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"> </span><span class="text">退出登录</span></a></li>
+  </ul>
+  
+</div>
+<!--sidebar-menu-->
+<div id="sidebar"> <a class="hidden" href="#"><span class="glyphicon glyphicon-list"> </span>系统菜单</a>
+	<ul>
+		<li class="submenu"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"> </span><span>后台首页</span></a></li>
+		<li class="submenu"><a href="#"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"> </span><span>销售管理</span></a>
+			<ul>
+				<li><a href="order_create.html">创建订单</a></li>
+				<li><a href="order_details.html">订单管理</a></li>
+			</ul>
+		</li>
+		<li class="submenu"><a href="#"><span class="glyphicon glyphicon-file" aria-hidden="true"> </span><span>数据导入</span></a>
+			<ul>
+				<li><a href="import_brush.html">刷单登记</a></li>
+				<li><a href="import_check.html">数据验证</a></li>
+			</ul>
+		</li>
+		<li class="submenu"><a href="loading.html"><span class="glyphicon glyphicon-random" aria-hidden="true"> </span><span>加载页面</span></a></li>
+		<li class="submenu"><a href="#"><span class="glyphicon glyphicon-stats" aria-hidden="true"> </span><span>Error</span></a>
+			<ul>
+				<li><a href="error_forbidden.html">404</a></li>
+			</ul>
+		</li>
+		<li class="submenu"><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"> </span><span>系统管理</span></a>
+			<ul>
+				<li><a href="role_modify.html">角色管理</a></li>
+			</ul>
+		</li>
+		<li class="submenu"><a href="buttons_alert.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> </span><span>按钮及警告框</span></a></li>
+		<li class="submenu"><a href="modal_form.html"><span class="glyphicon glyphicon-book" aria-hidden="true"> </span><span>模拟框表单</span></a>	</li>
+		<li class="submenu"><a href="bootbox_modal.html"><span class="glyphicon glyphicon-retweet" aria-hidden="true"> </span><span>提示框</span></a></li>
+		<li class="submenu"><a href="#"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"> </span><span>配置管理</span></a>	</li>
+		
+	</ul>
+</div>
+<!--end-sidebar-menu-->
+<!--containt-part-->
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><span class="glyphicon glyphicon-home" aria-hidden="true"> </span> 首页</a> <a href="#" class="current">系统设置</a> <a href="#" class="current">角色管理</a> </div>
+    <h1>角色管理</h1>
+  </div>
+  <!--alert-part-->
+  <div class="widget-content alert_padding">
+  			<div class="alert alert-info">
+              <button data-dismiss="alert" class="close">×</button>
+             <strong>请设置权限!</strong> 
+			</div>
+  </div>
+  <!--end-alert-part-->
+  
+  <div class="container-fluid">
+		 <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <span class="glyphicon glyphicon-th"> </span></span>
+            <h5>角色管理</h5>
+          </div>
+		  <form id="" name="">
+          <div class="widget-content nopadding noborder" >
+		  	  
+            <table class="table table-hover order-table-role">
+              <tbody>
+                <tr>
+                  <td><span class="red">*</span><b>角色代码：</b></td>
+                </tr>
+				<tr>
+                  <td><input type="text" class="form-control" id="" placeholder="" value="" ></td>
+                </tr>
+				<tr>
+                  <td><span class="red">*</span><b>角色名称：</b></td>
+                </tr>
+				<tr>
+                  <td><input type="text" class="form-control" id="" placeholder="" value="" ></td>
+                </tr>
+				<tr>
+                  <td><span class="red">*</span><b>角色说明：</b></td>
+                </tr>
+				<tr>
+                  <td><input type="text" class="form-control" id="" placeholder="" value="" ></td>
+                </tr>
+				
+              </tbody>
+            </table>
+          </div>
+		  
+		  <div class="widget-content">
+              <div class="roles-choseipt">
+				<div class="checkbox">
+					<label class="green">
+					  <input type="checkbox" class="roles-all"> 订单类
+					</label>
+				</div>
+				<div class="row">
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 订单创建
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 修改地址
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 订单发货
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 批量发货
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 更新备注
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 更新单号
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 订单列表
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 正常销售
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 虚拟销售
+						</label>
+					</div>
+				</div>
+		     </div>
+			  
+			  <div class="roles-choseipt">
+				<div class="checkbox">
+					<label class="green">
+					  <input type="checkbox" class="roles-all"> 商品类
+					</label>
+				</div>
+				<div class="row">
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 单品添加 
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 单品编辑
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 单品库存
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 组合添加
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 组合编辑
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 组合库存
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 单品管理
+						</label>
+					</div>
+					<div class="col-xs-2">
+					 
+						<label>
+						  <input type="checkbox"> 组合管理
+						</label>
+					</div>
+				</div>
+		     </div>
+			 
+			  <div class="roles-choseipt">
+				<div class="checkbox">
+					<label class="green">
+					  <input type="checkbox" class="roles-all"> 库存类
+					</label>
+				</div>
+				<div class="row">
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 新建 
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 提交审批
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 确认入库
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 库存历史
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 等待出库
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 入库单
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 出库单
+						</label>
+					</div>
+					
+				</div>
+		     </div>
+			 
+			  <div class="roles-choseipt">
+				<div class="checkbox">
+					<label class="green">
+					  <input type="checkbox" class="roles-all"> 统计类
+					</label>
+				</div>
+				<div class="row">
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 热销产品 
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 刷单产品
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 销售订单
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 刷单订单
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 销售概况
+						</label>
+					</div>
+					
+					
+				</div>
+		     </div>
+			 
+			  <div class="roles-choseipt">
+				<div class="checkbox">
+					<label class="green">
+					  <input type="checkbox" class="roles-all"> 导入类
+					</label>
+				</div>
+				<div class="row">
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 订单校验
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 刷单登记
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 虚拟发货
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 收货信息
+						</label>
+					</div>
+				</div>
+		     </div>
+			 
+			 <div class="roles-choseipt">
+				<div class="checkbox">
+					<label class="green">
+					  <input type="checkbox" class="roles-all"> 物流类
+					</label>
+				</div>
+				<div class="row">
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 一号店
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 京东
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 发网
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 天猫物流
+						</label>
+					</div>
+				</div>
+		     </div>
+			 
+			 <div class="roles-choseipt">
+				<div class="checkbox">
+					<label class="green">
+					  <input type="checkbox" class="roles-all"> 系统类
+					</label>
+				</div>
+				<div class="row">
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 后台用户
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 修改密码
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 待发邮件
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 权限管理
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 权限管理
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 程序日志
+						</label>
+					</div>
+				</div>
+		     </div>
+			 
+			 <div class="roles-choseipt">
+				<div class="checkbox">
+					<label class="green">
+					  <input type="checkbox" class="roles-all"> 配置类
+					</label>
+				</div>
+				<div class="row">
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 第三方平台
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 自动审单
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 发网API
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 邮件群组
+						</label>
+					</div>
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> SMTP配置
+						</label>
+					</div>
+				</div>
+		     </div>
+			 
+			 <div class="roles-choseipt">
+				<div class="checkbox">
+					<label class="green">
+					  <input type="checkbox" class="roles-all"> crm管理
+					</label>
+				</div>
+				<div class="row">
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 客户管理
+						</label>
+					</div>
+				</div>
+		     </div>
+			 
+			 <div class="roles-choseipt">
+				<div class="checkbox">
+					<label class="green">
+					  <input type="checkbox" class="roles-all"> 差评管理
+					</label>
+				</div>
+				<div class="row">
+					<div class="col-xs-2">
+						<label>
+						  <input type="checkbox"> 差评管理
+						</label>
+					</div>
+				</div>
+		     </div>
+			  
+				<div class="row-fluid">
+				  <button type="submit" class="btn btn-default btn-success">保存操作</button>
+				</div>
+				
+			</div>
+          
+		  </form>
+        </div>
+  </div>
+  
+</div>
+<!--end-containt-part-->
+
+
+<!--Footer-part-->
+<div class="row-fluid">
+  <div id="footer" class="span12"> Copyright &copy; 2015 Shanghai Top Beauty Industrial Co.,Ltd</div>
+</div>
+<!--end-Footer-part-->
+<script src="app/js/jquery.min.js"></script>
+<script src="app/js/bootstrap.min.js"></script>
+<script src="app/js/matrix.js"></script>
+<script src="app/js/matrix.roles.js"></script>
+</body>
+</html>

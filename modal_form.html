@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>模拟框表单</title>
+<link rel="stylesheet" href="app/css/bootstrap.min.css" />
+<link rel="stylesheet" href="app/css/matrix-style.css" />
+<link rel="stylesheet" href="app/css/matrix-media.css" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="favicon.ico" type="image/gif" />
+    <!--[if lt IE 9]>
+      <script src="app/js/html5shiv.min.js"></script>
+      <script src="app/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+  <h1><a href="#">后台管理系统</a></h1>
+</div>
+<!--close-Header-part--> 
+
+<!--top-Header-menu-->
+<div id="user-nav">
+  <ul class="nav">
+    
+    <li class=""><a title="" href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"> </span><span class="text">后台首页</span></a></li>
+    <li class=""><a title="" href="#"><span class="glyphicon glyphicon-lock" aria-hidden="true"> </span><span class="text">修改密码</span></a></li>
+    <li class=""><a title="" href="login.html"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"> </span><span class="text">退出登录</span></a></li>
+  </ul>
+  
+</div>
+<!--sidebar-menu-->
+<div id="sidebar"> <a class="hidden" href="#"><span class="glyphicon glyphicon-list"> </span>系统菜单</a>
+	<ul>
+		<li class="submenu"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"> </span><span>后台首页</span></a></li>
+		<li class="submenu"><a href="#"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"> </span><span>销售管理</span></a>
+			<ul>
+				<li><a href="order_create.html">创建订单</a></li>
+				<li><a href="order_details.html">订单管理</a></li>
+			</ul>
+		</li>
+		<li class="submenu"><a href="#"><span class="glyphicon glyphicon-file" aria-hidden="true"> </span><span>数据导入</span></a>
+			<ul>
+				<li><a href="import_brush.html">刷单登记</a></li>
+				<li><a href="import_check.html">数据验证</a></li>
+			</ul>
+		</li>
+		<li class="submenu"><a href="loading.html"><span class="glyphicon glyphicon-random" aria-hidden="true"> </span><span>加载页面</span></a></li>
+		<li class="submenu"><a href="#"><span class="glyphicon glyphicon-stats" aria-hidden="true"> </span><span>Error</span></a>
+			<ul>
+				<li><a href="error_forbidden.html">404</a></li>
+			</ul>
+		</li>
+		<li class="submenu"><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"> </span><span>系统管理</span></a>
+			<ul>
+				<li><a href="role_modify.html">角色管理</a></li>
+			</ul>
+		</li>
+		<li class="submenu"><a href="buttons_alert.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> </span><span>按钮及警告框</span></a></li>
+		<li class="submenu"><a href="modal_form.html"><span class="glyphicon glyphicon-book" aria-hidden="true"> </span><span>模拟框表单</span></a>	</li>
+		<li class="submenu"><a href="bootbox_modal.html"><span class="glyphicon glyphicon-retweet" aria-hidden="true"> </span><span>提示框</span></a></li>
+		<li class="submenu"><a href="#"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"> </span><span>配置管理</span></a>	</li>
+		
+	</ul>
+</div>
+<!--end-sidebar-menu-->
+<!--containt-part-->
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><span class="glyphicon glyphicon-home" aria-hidden="true"> </span> 首页</a> <a href="#" class="current">模拟框表单</a></div>
+    <h1>模拟框表单</h1>
+  </div>
+  
+  
+  <div class="container-fluid">
+	
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <span class="glyphicon glyphicon-th"> </span></span>
+            <h5>模拟框表单</h5>
+          </div>
+          <div class="widget-content">
+              <h3>模态框表单布局</h3>
+              <p><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">模态框表单布局</button></p>
+			  <!-- 模态框（Modal） -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+				   aria-labelledby="myModalLabel" aria-hidden="true">
+				   <div class="modal-dialog">
+					  <div class="modal-content">
+						 <div class="modal-header">
+							<button type="button" class="close" 
+							   data-dismiss="modal" aria-hidden="true">
+								  &times;
+							</button>
+							<h4 class="modal-title" id="myModalLabel">
+							   模态框表单布局
+							</h4>
+						 </div>
+						 <div class="modal-body">
+						 
+						 <!--Modal内容-->
+										  
+							<form class="form-horizontal">
+								<div class="row modalline">
+									   <label for="" class="col-xs-2 control-label">下拉框：</label>
+									   <div class="col-xs-10">
+									   <select class="form-control">
+										  <option selected="">--请选择--</option>
+										  <option class="l-iconsbg">下拉框1</option>
+										  <option class="l-iconsbg">下拉框2</option>
+										  <option class="l-iconsbg">下拉框3</option>
+										</select>
+									  </div>
+								  </div>
+								  <div class="row modalline">
+										<label for="exampleInputName" class="col-xs-2 control-label">文本框：</label>
+										<div class="col-xs-10">
+										<input type="text" placeholder="" id="exampleInputName" class="form-control" value="123456789">
+										</div>
+								  </div>
+								  <div class="row modalline">
+									
+										<label for="" class="col-xs-2 control-label">复选框：</label>
+										<div class="col-xs-10">
+										<label class="checkbox-inline">
+										  <input type="checkbox" id="inlineCheckbox1" value="option1"> 复选框1
+										</label>
+										<label class="checkbox-inline">
+										  <input type="checkbox" id="inlineCheckbox2" value="option2"> 复选框2
+										</label>
+										<label class="checkbox-inline">
+										  <input type="checkbox" id="inlineCheckbox3" value="option3"> 复选框3
+										</label>
+										</div>
+								  </div>
+								  <div class="row modalline">
+									
+									<label for="" class="col-xs-2 control-label">单选框：</label>
+									<div class="col-xs-10">
+									<label class="radio-inline">
+									  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" checked value="option1"> 单选框1
+									</label>
+									<label class="radio-inline">
+									  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 单选框2
+									</label>
+									<label class="radio-inline">
+									  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 单选框3
+									</label>
+									</div>
+								 </div>
+								 
+								 <div class="row modalline">
+									<label for="" class="col-xs-2 control-label">文件域：</label>
+									<div class="col-xs-10">
+										<div class="fileInputBox clearfix">
+										  <input type="file" name="upfile" id="upfile" class="upfile" onchange="document.getElementById('upfileResult').innerHTML=this.value"/>
+										  <input class="upFileBtn btn btn-default btn-info" type="button" value="浏览…" onclick="document.getElementById('upfile').click()" />
+										  <span class="file_tip" id="upfileResult" >未选择文件。</span>
+										</div>
+									</div>
+								 </div>
+							  
+								 <div class="row modalline">
+									<div class="col-xs-offset-2 col-xs-10">
+									<button class="btn btn-primary" type="reset">重置</button>
+									<button class="btn btn-success" type="button">确定</button> 
+									</div>
+								 </div>
+							</form>
+						 
+						  <!--end-Modal内容-->
+						  
+							
+						 </div>
+						 <div class="modal-footer">
+							<button type="button" class="btn btn-default" 
+							   data-dismiss="modal">关闭
+							</button>
+							<button type="button" class="btn btn-primary">
+							   提交更改
+							</button>
+						 </div>
+					  </div><!-- /.modal-content -->
+				</div>
+				</div><!-- /.modal -->
+			<hr>
+			<h3>选择电商平台</h3>
+			<p><button class="btn btn-green btn-lg" data-toggle="modal" data-target="#imgModal">浏览</button></p>
+			<!-- 模态框（Modal） -->
+			<div class="modal fade" id="imgModal" tabindex="-1" role="dialog" 
+			   aria-labelledby="myModalLabel" aria-hidden="true">
+			   <div class="modal-dialog">
+				  <div class="modal-content">
+					 <div class="modal-header">
+						<button type="button" class="close" 
+						   data-dismiss="modal" aria-hidden="true">
+							  &times;
+						</button>
+						<h4 class="modal-title" id="myModalLabel">
+						   选择浏览
+						</h4>
+					 </div>
+					 <div class="modal-body">
+					 
+					 <!--Modal内容-->
+									  
+						<form id="" name="" method="">
+							  <div class="row modalline">
+								  <a href="http://tmall.jingdiantaidi.com/" target="_blank" class="btn btn-lg"><img src="app/images/tmall_webicon.jpg" width="60" height="60" /></a>
+								  <a href="http://shop.yhd.com/m-139038.html" target="_blank" class="btn btn-lg"><img src="app/images/yhd_webicon.png" width="73" height="60"/></a>
+								  <a href="http://teddy.jd.com/" target="_blank" class="btn btn-lg"><img src="app/images/jd_webicon.png" width="160" height="60" /></a>
+							  </div>
+						</form>
+					 
+					  <!--end-Modal内容-->
+					  
+						
+					 </div>
+					 <div class="modal-footer">
+						<button type="button" class="btn btn-default" 
+						   data-dismiss="modal">关闭
+						</button>
+						<!--<button type="button" class="btn btn-primary">
+						   提交更改
+						</button>-->
+					 </div>
+				  </div><!-- /.modal-content -->
+			</div>
+			</div><!-- /.modal -->
+			
+          	</div>
+        </div>
+
+      
+  </div>
+</div>
+<!--end-containt-part-->
+
+
+<!--Footer-part-->
+<div class="row-fluid">
+  <div id="footer" class="span12"> Copyright &copy; 2015 Shanghai Top Beauty Industrial Co.,Ltd</div>
+</div>
+<!--end-Footer-part-->
+<script src="app/js/jquery.min.js"></script>
+<script src="app/js/bootstrap.min.js"></script>
+<script src="app/js/matrix.js"></script>
+
+</body>
+</html>
